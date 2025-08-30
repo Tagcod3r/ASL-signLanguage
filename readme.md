@@ -72,15 +72,16 @@ conda deactivate
 
 Before running the notebooks, ensure your dataset is properly organized:
 
-1. Create a folder named `data` in the project root directory
-2. Inside the `data` folder, create subfolders for each class/category (e.g., `A`, `B`, `C`, etc.)
-3. Place the corresponding images in their respective subfolders
+1. Create a folder named `raw` in the project root directory for your original dataset
+2. Inside the `raw` folder, create subfolders for each class/category (e.g., `A`, `B`, `C`, etc.)
+3. Place the corresponding original images in their respective subfolders
+4. **Note**: After running the data augmentation process, the processed images will be automatically organized in a `data` folder with the same subfolder structure
 
 **Expected folder structure:**
 
 ```
 project/
-├── data/
+├── raw/                    # Original dataset (before augmentation)
 │   ├── A/
 │   │   ├── image1.jpg
 │   │   ├── image2.jpg
@@ -92,6 +93,16 @@ project/
 │   ├── C/
 │   │   ├── image1.jpg
 │   │   ├── image2.jpg
+│   │   └── ...
+│   └── ...
+├── data/                   # Processed dataset (after augmentation)
+│   ├── A/
+│   │   ├── augmented_image1.jpg
+│   │   ├── augmented_image2.jpg
+│   │   └── ...
+│   ├── B/
+│   │   ├── augmented_image1.jpg
+│   │   ├── augmented_image2.jpg
 │   │   └── ...
 │   └── ...
 ├── environment.yml
