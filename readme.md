@@ -1,3 +1,7 @@
+![Image](https://github.com/user-attachments/assets/d0954c57-e802-45ab-942b-281d2f4746c5)
+
+**Try it out yourself by following the setup below!**
+
 # Project Setup and Running Instructions
 
 This guide will walk you through setting up the environment and running the Jupyter notebooks for this project.
